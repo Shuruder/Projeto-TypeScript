@@ -1,25 +1,19 @@
-let button = document.getElementById('button');
-let input1 = document.getElementById('input1') as HTMLInputElement;
-let input2 = document.getElementById('input2') as HTMLInputElement;
-
-
-function addNumeros(n1: number, n2: number, devePrintar: Boolean, frase: string) {
-    let resultado = n1 + n2;
-    if(devePrintar){
-        console.log( frase + resultado);
-    }
-    return n1 + n2;
+const pessoa = {
+    nome: 'Mariana',
+    idade: 27,
+    profissao: 'dev',
 }
 
-let devePrintar = true;
-let frase ='O valor é: '
+pessoa.idade = 25;
 
-if(button) {
-    button.addEventListener('click', () => {
-        if(input1 && input2){
-            console.log(addNumeros(Number(input1.value), Number(input2.value), devePrintar, frase));
-        }
-    })
+const andre: {nome: string, idade: number, profissao: string} = {
+    nome: 'Andre',
+    idade: 25,
+    profissao: 'Pintor'
 }
-// paramos em relação entre tipos de variáveis
-// 2 min
+
+const paula: {nome: string, idade: number, profissao: string} = {
+    nome: 'Paula',
+}
+
+// objeto, enum e interface 3:19
